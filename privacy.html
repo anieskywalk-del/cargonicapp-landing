@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidad · Car-Go</title>
+<meta name="description" content="Política de Privacidad de Car-Go — cómo recopilamos, usamos y protegemos tus datos personales.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --void:#0A0B0D;
+    --carbon:#101319;
+    --panel:#13171F;
+    --grid:#1C2230;
+    --grid-soft:#161B26;
+    --blue:#3B82F6;
+    --blue-bright:#60A5FA;
+    --white:#F1F5FB;
+    --muted:#727E92;
+    --maxw:820px;
+    --ease:cubic-bezier(.22,.61,.36,1);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--void);color:var(--white);
+    font-family:"Chakra Petch",sans-serif;font-weight:300;
+    line-height:1.7;-webkit-font-smoothing:antialiased;
+  }
+  body::before{
+    content:"";position:fixed;inset:0;
+    background-image:linear-gradient(var(--grid-soft) 1px,transparent 1px),linear-gradient(90deg,var(--grid-soft) 1px,transparent 1px);
+    background-size:46px 46px;
+    mask-image:radial-gradient(ellipse 120% 90% at 50% 0%,#000 35%,transparent 78%);
+    -webkit-mask-image:radial-gradient(ellipse 120% 90% at 50% 0%,#000 35%,transparent 78%);
+    opacity:.4;z-index:0;pointer-events:none;
+  }
+  a{color:var(--blue-bright);text-decoration:none}
+  a:hover{text-decoration:underline}
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:50;
+    backdrop-filter:blur(10px);
+    background:linear-gradient(180deg,rgba(10,11,13,.92),rgba(10,11,13,.55));
+    border-bottom:1px solid var(--grid);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;height:68px;max-width:var(--maxw);margin:0 auto;padding:0 28px}
+  .logo{font-weight:700;font-size:20px;letter-spacing:.02em;color:var(--white);text-decoration:none}
+  .logo span{color:var(--blue)}
+  .back{font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.08em;color:var(--muted);text-transform:uppercase;transition:color .2s}
+  .back:hover{color:var(--blue-bright);text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:110px 28px 80px;position:relative;z-index:1}
+  .eyebrow{
+    font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.32em;text-transform:uppercase;
+    color:var(--blue-bright);display:inline-flex;align-items:center;gap:10px;
+  }
+  .eyebrow::before{content:"";width:22px;height:1px;background:var(--blue)}
+  h1{font-weight:600;font-size:clamp(28px,4vw,42px);line-height:1.1;margin:20px 0 8px}
+  .updated{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--muted);margin-bottom:48px}
+  h2{font-weight:600;font-size:20px;margin:44px 0 14px;padding-top:8px;border-top:1px solid var(--grid-soft)}
+  h2:first-of-type{margin-top:0;border-top:none}
+  p{color:#B6BFCD;margin-bottom:16px;font-size:15px}
+  ul{color:#B6BFCD;font-size:15px;padding-left:20px;margin-bottom:16px}
+  li{margin-bottom:8px;padding-left:8px}
+  table{width:100%;border-collapse:collapse;margin:20px 0 28px;font-size:14px}
+  th{background:var(--carbon);color:var(--blue-bright);font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:12px 16px;text-align:left;border:1px solid var(--grid)}
+  td{padding:12px 16px;border:1px solid var(--grid);color:#B6BFCD;vertical-align:top}
+  tr:nth-child(even) td{background:rgba(28,34,48,.4)}
+  .highlight{background:rgba(59,130,246,.08);border:1px solid rgba(59,130,246,.2);padding:18px 22px;margin:20px 0;border-radius:2px}
+  .highlight p{margin:0;color:var(--white)}
+  footer{border-top:1px solid var(--grid);padding:36px 0;position:relative;z-index:1;margin-top:60px}
+  .foot-inner{max-width:var(--maxw);margin:0 auto;padding:0 28px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;font-family:"JetBrains Mono",monospace;font-size:11.5px;color:var(--muted)}
+  .foot-inner a{color:var(--muted)}
+  .foot-inner a:hover{color:var(--blue-bright)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="/" class="logo">Car<span>·</span>Go</a>
+    <a href="/" class="back">← Volver al inicio</a>
+  </div>
+</header>
+
+<div class="wrap">
+  <span class="eyebrow">Legal</span>
+  <h1>Política de Privacidad</h1>
+  <p class="updated">Última actualización: 22 de junio de 2026</p>
+
+  <div class="highlight">
+    <p>Car-Go ("la Aplicación", "nosotros") opera como marketplace de vehículos, repuestos, accesorios y servicios automotrices. Esta Política explica qué datos recopilamos, cómo los usamos y cuáles son tus derechos.</p>
+  </div>
+
+  <h2>1. Responsable del tratamiento</h2>
+  <p>Car-Go — cargonicapp.es<br>
+  Contacto: <a href="mailto:hola@cargonicapp.es">hola@cargonicapp.es</a></p>
+
+  <h2>2. Datos que recopilamos</h2>
+  <table>
+    <thead>
+      <tr><th>Dato</th><th>Por qué lo recopilamos</th><th>Base legal</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Nombre completo</td><td>Identificación del perfil de usuario</td><td>Ejecución de contrato</td></tr>
+      <tr><td>Dirección de email</td><td>Autenticación, notificaciones y recuperación de cuenta</td><td>Ejecución de contrato</td></tr>
+      <tr><td>Número de teléfono</td><td>Contacto entre compradores y vendedores</td><td>Ejecución de contrato</td></tr>
+      <tr><td>Ciudad o dirección</td><td>Mostrar ubicación del vendedor en los listings</td><td>Ejecución de contrato</td></tr>
+      <tr><td>Género</td><td>Personalización de la experiencia</td><td>Consentimiento</td></tr>
+      <tr><td>Fotografías de vehículos</td><td>Publicaciones en el marketplace</td><td>Ejecución de contrato</td></tr>
+      <tr><td>Mensajes de chat</td><td>Comunicación entre usuarios dentro de la app</td><td>Ejecución de contrato</td></tr>
+      <tr><td>Token de sesión</td><td>Autenticación segura y persistencia de sesión</td><td>Interés legítimo (seguridad)</td></tr>
+      <tr><td>Preferencias de notificaciones</td><td>Enviar notificaciones push según tus preferencias</td><td>Consentimiento</td></tr>
+      <tr><td>Datos de actividad en la app</td><td>Historial de publicaciones, favoritos e interacciones</td><td>Ejecución de contrato</td></tr>
+    </tbody>
+  </table>
+
+  <h2>3. Cómo usamos tus datos</h2>
+  <ul>
+    <li>Crear y gestionar tu cuenta de usuario</li>
+    <li>Mostrar tus publicaciones en el marketplace</li>
+    <li>Facilitar la comunicación entre compradores y vendedores vía chat</li>
+    <li>Enviarte notificaciones push relacionadas con tu actividad</li>
+    <li>Enviarte emails transaccionales (confirmación de cuenta, recuperación de contraseña)</li>
+    <li>Mejorar el funcionamiento y la seguridad de la app</li>
+    <li>Cumplir con obligaciones legales</li>
+  </ul>
+
+  <h2>4. Compartir datos con terceros</h2>
+  <p>Car-Go no vende tus datos personales. Compartimos información únicamente con los siguientes proveedores de servicio, bajo contratos de confidencialidad:</p>
+  <ul>
+    <li><strong>Supabase</strong> — almacenamiento de base de datos y autenticación (servidores en la UE)</li>
+    <li><strong>Hostinger</strong> — servicio de email transaccional (cargonicapp.es)</li>
+    <li><strong>Expo / Google Firebase</strong> — notificaciones push</li>
+  </ul>
+  <p>También podemos compartir datos cuando lo exija la ley o una autoridad competente.</p>
+
+  <h2>5. Contenido generado por usuarios</h2>
+  <p>Las fotografías y descripciones que publicás en el marketplace son visibles para todos los usuarios de la app. Al subir contenido, declarás que tenés los derechos necesarios para publicarlo y que no viola derechos de terceros.</p>
+  <p>Car-Go puede eliminar contenido que viole esta política o los derechos de autor de terceros. Para reportar contenido, escribí a <a href="mailto:hola@cargonicapp.es">hola@cargonicapp.es</a>.</p>
+
+  <h2>6. Retención de datos</h2>
+  <ul>
+    <li>Mientras tu cuenta esté activa</li>
+    <li>Hasta 30 días después de que eliminés tu cuenta (período de recuperación)</li>
+    <li>Los mensajes de chat se eliminan junto con la cuenta</li>
+    <li>Algunos datos pueden retenerse más tiempo si lo exige la ley</li>
+  </ul>
+
+  <h2>7. Seguridad</h2>
+  <p>Usamos cifrado en tránsito (HTTPS/TLS), almacenamiento seguro de credenciales (Expo SecureStore), y autenticación por email con OTP. Sin embargo, ningún sistema es 100% seguro — te recomendamos usar una contraseña única y robusta.</p>
+
+  <h2>8. Tus derechos</h2>
+  <p>Tenés derecho a:</p>
+  <ul>
+    <li><strong>Acceder</strong> a los datos que tenemos sobre vos</li>
+    <li><strong>Rectificar</strong> datos incorrectos o incompletos</li>
+    <li><strong>Eliminar</strong> tu cuenta y datos personales (disponible en Configuración → Eliminar cuenta)</li>
+    <li><strong>Oponerte</strong> al tratamiento basado en interés legítimo</li>
+    <li><strong>Portabilidad</strong> de tus datos en formato estructurado</li>
+    <li><strong>Retirar el consentimiento</strong> en cualquier momento</li>
+  </ul>
+  <p>Para ejercer cualquiera de estos derechos, escribí a <a href="mailto:hola@cargonicapp.es">hola@cargonicapp.es</a>.</p>
+
+  <h2>9. Menores de edad</h2>
+  <p>Car-Go está dirigida exclusivamente a personas mayores de 18 años. No recopilamos intencionalmente datos de menores. Si detectamos que un usuario es menor de edad, eliminaremos su cuenta y datos asociados.</p>
+
+  <h2>10. Cambios a esta política</h2>
+  <p>Podemos actualizar esta Política de Privacidad. Te notificaremos por email o mediante un aviso en la app con al menos 15 días de anticipación ante cambios significativos. El uso continuado de la app después de la notificación implica la aceptación de los cambios.</p>
+
+  <h2>11. Contacto</h2>
+  <p>Para cualquier consulta sobre privacidad:<br>
+  <a href="mailto:hola@cargonicapp.es">hola@cargonicapp.es</a><br>
+  cargonicapp.es</p>
+</div>
+
+<footer>
+  <div class="foot-inner">
+    <span>© 2026 CAR_GO · CARGONICAPP.ES</span>
+    <div style="display:flex;gap:24px">
+      <a href="/privacy.html">Política de Privacidad</a>
+      <a href="/terms.html">Términos y Condiciones</a>
+      <a href="/">Inicio</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
